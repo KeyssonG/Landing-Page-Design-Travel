@@ -416,7 +416,7 @@ footer {
 }
 
 .row {
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
