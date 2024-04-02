@@ -619,6 +619,7 @@ hr {
 
     .header__container {
         text-align: center;
+        margin-bottom: -20rem;
       }
     
       .header__container h4 {
@@ -740,6 +741,11 @@ hr {
         font-size: 1rem;
         align-items: center;
     }
+
+    .header__container h1 {
+        margin-top: -20rem;
+        
+      }
     
 }
 
