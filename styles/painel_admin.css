@@ -610,6 +610,9 @@ hr {
         grid-area: 1/1/2/3;
         text-align: center;
       }
+      
+         
+
     }
 
 @media (width < 600px) {
@@ -669,6 +672,71 @@ hr {
     .col:nth-child(2), .col:nth-child(3) {
         flex-basis: 100%;
     }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group textarea,
+    .form-group input[type="file"] {
+        width: 70%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;
+        text-align: center;
+        
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .section {
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+     .btn-news {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        padding: 0.75rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        color: var(--cor--primaria);
+        background-color: var(--cor--secundaria);
+        cursor: pointer;
+        display: flex;
+        margin: 0 auto 10px; /
+        padding: 10px;
+        border-radius: 5px;
+    }
+        
+
     
 }
 
