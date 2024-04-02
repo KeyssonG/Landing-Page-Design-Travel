@@ -736,7 +736,10 @@ hr {
         border-radius: 5px;
     }
         
-
+    .dashassinantes h2{
+        font-size: 1rem;
+        align-items: center;
+    }
     
 }
 
