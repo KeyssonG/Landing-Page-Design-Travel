@@ -1,65 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Painel Adminstrativo</title>
   <link rel="stylesheet" href="styles/painel_admin.css">
-  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <title>Travel</title>
 </head>
-
 <body>
-  <header id="home">
-    <nav class="nav__bar">
-      <div class="nav__logo">
-        <a href="#">Viage+</a>
-      </div>
-      <ul class="nav__links">
-        <li class="link"><a href="#home">Home</a></li>
-        <li class="link"><a href="#about">Sobre nós</a></li>
-        <li class="link"><a href="#discover">Descobridor</a></li>
-        <li class="link"><a href="#blog">Blog</a></li>
-        <li class="link"><a href="#journals">Diárias</a></li>
-        <li class="link"><a href="#gallery">Galeria</a></li>
-        <li class="link search">
-          <span><i class="ri-search-line"></i></span>
-        </li>
+  <header>
+    <h1>Painel Administrativo - Newsletter</h1>
+    <nav>
+      <ul>
+        <li><a href="#criar">Criar Newsletter</a></li>
+        <li><a href="#gerenciar">Gerenciar Newsletter</a></li>
+        <li><a href="#assinantes">Assinantes</a></li>
+        <li><a href="#configuracoes">Configurações</a></li>
+        <li><a href="#sair">Sair</a></li>
       </ul>
     </nav>
-
-    <div class="section__container header__container">
-      <div class="header__container">
-        <h1>Painel de Editor de Newsletter</h1>
-        <div class="section">
-          <h2>Criar Nova Newsletter</h2>
-          <div class="form-group">
-            <label for="titulo">Título:</label>
-            <input type="text" id="titulo" placeholder="Digite o título da newsletter">
-          </div>
-          <div class="form-group">
-            <label for="conteudo">Conteúdo:</label>
-            <textarea id="conteudo" placeholder="Digite o conteúdo da newsletter"></textarea>
-          </div>
-          <button class="btn-news" onclick="criarNewsletter()">Criar Newsletter</button>
-        </div>
-        <div class="form-group">
-          <label for="imagem">Imagem:</label>
-          <input type="file" id="imagem" accept="image/*">
-        </div>
-      </div>
-    </div>
   </header>
-  <footer class="footer-content">
-    <p class="copyright">
-      Copyright © 2024 Viage+ | keysson.
-    </p>
+
+  <main>
+    <section id="criar">
+      <h2>Criar Newsletter</h2>
+      <form>
+        <label class="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="conteudo">Conteúdo:</label>
+        <textarea id="conteudo" name="conteudo" required></textarea>
+
+        <button type="submit">Enviar Newsletter</button>
+      </form>
+    </section>
+
+    <section id="gerenciar">
+      <h2>Gerenciar Newsletter</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Data de Envio</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Newsletter de Outubro</td>
+            <td>01/10/2024</td>
+            <td><button>Editar</button><button>Remover</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="assinantes">
+      <h2>Assinantes</h2>
+      <ul>
+        <li>Nome: João Silva | E-mail: joao@exemplo.com</li>
+        <li>Nome: Maria Oliveira | E-mail: maria@exemplo.com</li>
+      </ul>
+    </section>
+
+    <section id="configuracoes">
+      <h2>Configurações</h2>
+      <form>
+        <label for="email">E-mail do Administrador:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy: Direitos reservados Administrativo Newsletter Travel 2024</p>
   </footer>
-
-  <script src="scripts/painel_admin.js"></script>
 </body>
-
+<script src="scripts/painel_admin.js"></script>
 </html>
